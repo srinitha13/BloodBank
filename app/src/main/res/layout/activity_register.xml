@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+
+            android:text="Your Details will be public to thecommunity,by using this app you
+            also pledge to be a donar to help those who are in need."
+            android:lines="4"
+            android:minLines="2"
+            android:singleLine="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="City"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/blood_group"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Blood group"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="187dp"
+            android:layout_height="62dp"
+            android:layout_margin="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_bg"
+            android:text="Become donor"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:inputType="textPassword"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blood_group" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
